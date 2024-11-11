@@ -1,40 +1,82 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
 # weather-dashboard-app
->>>>>>> 9fabfe450ce4b012ffffc8a7d183b59c926b1550
+
+This is a weather dashboard application built using React and Next.js. It allows users to check weather data for different cities, including current weather details and forecasts.
+
+## Setup Instructions
+
+To set up the project on your local machine, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Jaswanth-Kumar-Reddy/weather-dashboard-app.git
+    cd weather-dashboard-app
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+3. Run the development server:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev
+    ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Assumptions Made
+
+- The application assumes the user has an internet connection to fetch weather data via the API.
+- The user has basic knowledge of React and Next.js for running and making further modifications to the application.
+- The weather API used is available and functioning correctly.
+
+## Trade-offs Considered
+
+- **API Choice**: We chose a weather API that provides sufficient data for our needs (temperature, weather conditions, etc.). There are more comprehensive APIs available, but this one strikes a good balance between ease of use and data richness.
+- **Performance vs Features**: The app focuses on providing a responsive UI with essential weather information rather than loading every single detail. More advanced data could be added in the future for more detailed insights.
+
+## List of Implemented Features
+
+- Fetch current weather data based on user input (city name).
+- Display weather information such as temperature, humidity, and conditions.
+- Display an error message when the city is not found.
+- User-friendly UI with basic styling for easy readability.
+- Responsive design for mobile and desktop views.
+
+## Future Improvements
+
+- **Multiple Cities**: Allow the user to check the weather for multiple cities at once.
+- **Advanced Features**: Add a 7-day weather forecast, hourly weather updates, and charts/graphs for temperature trends.
+- **Performance Enhancements**: Use caching to minimize repeated API requests and improve loading times.
+- **Unit Conversion**: Allow users to switch between Celsius, Fahrenheit, and Kelvin.
+- **Deploy to Production**: Deploy the app to a cloud platform like Vercel or Netlify for public access.
+
+## Screen Recorded 60 Sec Video
+
+You can view the screen recording of the app [here](https://drive.google.com/file/d/1jIakLk5QVt_EVcn5XP4fb0ORflQ8k3TA/view?usp=share_link).
+
+## Deploy the Application (Optional)
+
+For easy deployment, you can use [Vercel](https://vercel.com) or [Netlify](https://www.netlify.com/):
+
+1. Push your code to GitHub (as shown in the steps above).
+2. Sign up for an account on Vercel/Netlify and link your GitHub repository.
+3. Follow the instructions to deploy the app.
+
+For more information, refer to the [Vercel Deployment Docs](https://vercel.com/docs).
+
+---
+
+Feel free to contribute to this project by submitting pull requests or reporting issues!
+
+
